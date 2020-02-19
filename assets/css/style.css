@@ -1,0 +1,208 @@
+#navLogo {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#profileRound {
+    /* margin-top: 20px;
+    margin-left: 10%; */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.namePlate {
+    margin-left: 40px;
+    font-family: rockwell;
+    font-size: 40px;
+}
+
+.arrowIcon {
+    width: 100px;
+    height: 45px;
+    margin-left: 60%;
+}
+
+.arrowIcon:hover {
+    transform: scale(1.13); 
+}
+
+.curlyBraceDesign {
+    font-weight: 900;
+    color: rgb(81, 255, 0);
+    font-family: Arial;
+}
+
+.new4 {
+    border-left: 6px solid rgb(151, 151, 151);
+    height: 420px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -90px;
+    top: 0;
+}
+
+.nameSlide {
+    margin-left: -200px;
+    position: relative;
+    list-style-type: none;
+}
+
+#about {
+    margin-top: 4%;
+}
+
+.aboutText {
+    text-align: justify;
+    margin: auto;
+    padding-top: 10px;
+    width: 80%;
+}
+
+.aboutHr {
+    margin-top: -5px;
+    border: 3px solid rgb(226, 226, 226);
+    width: 80px;
+    border-radius: 5px;
+}
+
+.view {
+    background: url("/assets/img/darkBG.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    min-height: 50px;
+    max-height: 100%;
+    background-color: rgba(78, 78, 78, 0.849);
+    box-shadow: -1px 6px #3cff00;
+}
+
+#about-tech {
+    margin-top: 80px;
+}
+
+/* brand css strat*/
+.brands {
+  color:#313437;
+  background-color:#fff;
+}
+
+.brands a {
+    margin-top: -10px;
+  display:block;
+  text-align:center;
+  padding:40px 0;
+}
+
+@media (max-width:767px) {
+  .brands a {
+    padding:30px 0;
+  }
+}
+
+.brands a img {
+    width: 130px;
+    height: auto;
+  display:inline-block;
+  margin:10px 20px;
+  vertical-align:middle;
+  filter: grayscale(100%);
+}
+.brands a img:hover{
+    filter: none;
+    transform: scale(1.10); 
+}
+/* brand css end */
+#projects {
+    background-color: #eee;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+
+#projects::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background:#eee;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    margin-bottom: 100px;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(4deg);
+}
+
+#contact {
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: -50px;
+    max-width: 35%;
+    min-width: 320px;
+    background-color: black;
+}
+
+.emailFooter {
+    font-weight: 500;
+    color: rgb(81, 255, 0);
+}
+
+.flex-footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 80%;
+}
+
+/* .projectss {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background: rgba(65, 65, 65, 0.678);
+}
+
+.projectss:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: red;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(4deg);
+} */
+
+.project-img {
+    /* max-width: 100%; */
+    margin-bottom: 15px;
+    box-shadow: 9px 8px 20px 0px #0000008a;
+}
+/* @media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+} */
+
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
