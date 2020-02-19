@@ -68,7 +68,7 @@
 }
 
 .view {
-    background: url("/assets/img/darkBG.jpg")no-repeat center center;
+    background: url("/img/darkBG.jpg")no-repeat center center;
     background-size: cover;
 }
 
