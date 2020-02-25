@@ -1,7 +1,6 @@
-// import express, {urlencoded, json, static} from "express";
-// import router from './router';
-
 const express = require('express')
+const session = require('express-session')
+const flash = require('connect-flash')
 const router = require('./router')
 
 const app = express();
@@ -12,6 +11,23 @@ if(port == null || port == "") {
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
+let sessionOntions = session({
+    secret: "I watch",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {maxAge: 1000 * 60 * 60 * 24, httpOnly: true}
+})
+
+app.use(sessionOntions)
+app.use(flash())
+
+app.use((req, res, next) => {
+    console.log("request", req.session)
+    res.locals.errors = req.flash("errors")
+    res.locals.success = req.flash("success")
+
+    next();
+})
 
 app.set('views', 'views')
 app.set('view engine', 'ejs')

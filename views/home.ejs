@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<link rel="icon" href="/img/NinjaDEV2.png" type="image/x-icon">
-<title>John Louie Jayme | MyPortfolio</title>
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
-<!-- Animation -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
-<!-- custom styles -->
-<link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+<%- include('includes/header') %>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <a class="navbar-brand" href="#">
         <img id="navLogo" class="navbar-brand-c" src="/img/NinjaDEV2.png" alt="profilePic">
         <!-- <ul class="tag mt-2">
@@ -51,7 +30,7 @@
     </div>
 </nav>
 
-<div class="view intro-2">
+<div class="view viewBG intro-2">
     <div class="full-bg-img">
         <div class="mask flex-center">
             <div class="container white-text">
@@ -68,7 +47,7 @@
                         Web Developer<br>
                         </h1>
                         <h1 class="curlyBraceDesign">}</h1>
-                        <img class="arrowIcon" src="/img/image2vector.svg">                         
+                        <a href="#contact"><img class="arrowIcon" src="/img/image2vector.svg"></a>                        
                     </div>                   
                 </div>               
             </div>
@@ -110,7 +89,7 @@
                 <img src="/img/tech/postman.png">
                 <img src="/img/tech/bootstrap.png">
                 <img src="/img/tech/babael.png">
-                <img src="/assets/img/tech/php.png">
+                <img src="/img/tech/php.png">
                 <img src="/img/tech/mysql.png">
             </a>
         </div>
@@ -123,17 +102,65 @@
         <h1 class="text-center font-weight-bold animated fadeIn">Projects</h1>
         <hr class="aboutHr">
         <div class="row">
-            <div class="col-12 col-md-4"><img class="project-img img-fluid wow animated fadeInDown" src="/img/projects/examinationApp.PNG"></div>
-            <div class="col-12 col-md-8"><img class="project-img img-fluid wow animated zoomIn" src="/img/projects/nutriotionMonitoringApp.PNG"></div>
-            <div class="col-12 col-md-12"><img class="project-img img-fluid wow animated fadeInUp" src="/img/projects/COED.PNG"></div>
+            <div class="col-12 col-md-4">
+                <div class="view overlay">
+                    <img class="project-img img-fluid wow animated fadeInDown" src="/img/projects/examinationApp2.PNG">
+                    <div class="mask flex-center rgba-black-strong">
+                        <p class="white-text">
+                            <button type="button" class="btn btn-outline-primary waves-effect">Primary</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="view overlay">
+                    <img class="project-img img-fluid wow animated zoomIn" src="/img/projects/nutriotionMonitoringApp.PNG">
+                    <div class="mask flex-center rgba-black-strong">
+                        <p class="white-text">
+                            <button type="button" class="btn btn-outline-primary waves-effect">Primary</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12">
+                <div class="view overlay">
+                    <img class="project-img img-fluid wow animated fadeInUp" src="/img/projects/COED.PNG">
+                    <div class="mask flex-center rgba-black-strong">
+                        <p class="white-text">
+                            <button type="button" class="btn btn-outline-primary waves-effect">Primary</button>
+                        </p>
+                    </div>
+                </div>
+            </div>           
         </div>
+        <a id="contentToggle" data-toggle="collapse" href="#collapse-project-div"><img class="arrowIconDown animated bounce infinite" src="/img/arrowDownB.png"></a>
     </div>
 </section>
+<br>
+  <!-- / Collapse buttons -->
+  
+  <!-- Collapsible element -->
+  <div class="collapse" id="collapse-project-div">
+        <div class="container">
+            <h4 class="text-left font-weight-bold animated fadeIn">Bootcamp and Online course exercise</h4>
+            <div class="row">
+                <ul class="projectExtend-ul">
+                    <li class="projectExtend-ul"><a href="https://google.com" target="_black">recipe book application</a></li>
+                    <li class="projectExtend-ul"><a href="https://google.com" target="_black">random quote generator</a></li>
+                    <li class="projectExtend-ul"><a href="https://google.com" target="_black">Github account finder</a></li>
+                    <li class="projectExtend-ul"><a href="https://google.com" target="_black">react todo-list app</a></li>
+                    <li class="projectExtend-ul"><a href="https://google.com" target="_black">react weather application</a></li>
+                    <li class="projectExtend-ul"><a href="https://google.com" target="_black">chat room</a></li>
+                    <li class="projectExtend-ul"><a href="https://google.com" target="_black">complex-app</a></li>
+                </ul>
+            </div>
+            <a id="contentHide" data-toggle="collapse" href="#collapse-project-div"><img class="arrowIconDown animated bounce infinite" src="/img/arrowUpB.png"></a>
+        </div>
+  </div>
 
 <br>
 <div style="background-color: black;">
 <section id="contact">
-
     <br>
     <div class="card">
 
@@ -150,45 +177,44 @@
         </div>
         <!--Header-->
         <div class="card-body mx-4">
+            <%- include('includes/flash')%>
+            <div id="messageArea">
 
-            <div class="md-form">
-                <i class="fas fa-user prefix grey-text"></i>
-                <input type="text" id="form104" class="form-control">
-                <label for="form104">Your name</label>
             </div>
-            <div class="md-form">
-                <i class="fas fa-envelope prefix grey-text"></i>
-                <input type="text" id="form105" class="form-control">
-                <label for="form105">Your email</label>
-            </div>
-            <div class="md-form">
-                <i class="fas fa-tag prefix grey-text"></i>
-                <input type="text" id="form106" class="form-control">
-                <label for="form106">Subject</label>
-            </div>
-            <div class="md-form">
-                <i class="fas fa-pencil-alt prefix grey-text"></i>
-                <textarea id="form107" class="md-textarea form-control" rows="5"></textarea>
-                <label for="form107">Your message</label>
-            </div>
-            <!--Grid row-->
-            <div class="row d-flex align-items-center mb-3 mt-4">
-            <!--Grid column-->
-            <div class="col-md-12">
-                <div class="text-center">
-                <button type="button" class="btn btn-grey btn-rounded z-depth-1a">Send</button>
+            
+            <form action="/sendEmail" method="POST" id="email-form">
+                <div class="md-form form-group">
+                    <i class="fas fa-user prefix grey-text"></i>
+                    <input type="text" name="senderName" id="form104" class="form-control">
+                    <label for="form104">Your name</label>
                 </div>
-            </div>
-            <!--Grid column-->
-    
-            </div>
-        <!--Grid row-->
-      </div>
-  
+                <div class="md-form form-group">
+                    <i class="fas fa-envelope prefix grey-text"></i>
+                    <input type="text" name="senderEmail" id="form105" class="form-control">
+                    <label for="form105">Your email</label>
+                </div>
+                <div class="md-form form-group">
+                    <i class="fas fa-tag prefix grey-text"></i>
+                    <input type="text" name="messageSubject" id="form106" class="form-control">
+                    <label for="form106">Subject</label>
+                </div>
+                <div class="md-form form-group">
+                    <i class="fas fa-pencil-alt prefix grey-text"></i>
+                    <textarea id="form107" name="senderMessage" class="md-textarea form-control" rows="5"></textarea>
+                    <label for="form107">Your message</label>
+                </div>
+                <div class="row d-flex align-items-center mb-3 mt-4">
+
+                    <div class="col-md-12">
+                        <div class="text-center">
+                        <button type="submit" class="btn btn-grey btn-rounded z-depth-1a">Send</button>
+                        </div>
+                    </div>
+        
+                </div>
+            </form>
+        </div>
     </div>
-  
-  
-  <!-- Section: form gradient -->
 </section>
 </div>
 
@@ -200,7 +226,7 @@
     <div class="row">
         <div class="col-12 pt-5">
             <div class="mb-5 mt-0 flex-footer-content">
-            <a>
+            <a href="https://www.facebook.com/johnlouie.jayme.7" target="blank"
                 <i class="fab fa-facebook-f fa-2x ml-md-5 px-3"> </i>
             </a>
             <a>
@@ -232,20 +258,4 @@
 </footer>
 <!-- Footer -->
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
-
-<script>
-    $( document ).ready(function() {
-    new WOW().init();
-});
-</script>
-
-</body>
-</html>
+<%- include('includes/footer')%>
