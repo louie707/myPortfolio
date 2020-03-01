@@ -25,6 +25,12 @@
     }
 }
 /* loader end */
+
+section {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
 #navLogo {
     width: 50px;
     height: 50px;
@@ -74,10 +80,6 @@
     margin-left: -200px;
     position: relative;
     list-style-type: none;
-}
-
-#about {
-    margin-top: 4%;
 }
 
 .aboutText {
@@ -148,7 +150,6 @@
 /* brand css end */
 #projects {
     background-color: #eee;
-    padding: 20px 0px 20px 0px;
     position: relative;
 }
 
@@ -172,10 +173,20 @@
 }
 
 .projectExtend-ul {
-    list-style: none;
+    list-style: square;
     margin: 10px 0px 10px 0px;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: blue;
 }
 
 #contact {
