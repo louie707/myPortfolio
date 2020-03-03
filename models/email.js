@@ -46,7 +46,9 @@ class Email {
                     to: 'louiejayme707@gmail.com',     
                     subject: this.emailData.messageSubject,
                     text: this.emailData.senderMessage,
-                    html: `Sender Name: <strong>${this.emailData.senderName}</strong><br><br> ${this.emailData.senderMessage}`
+                    html: `Sender Name: <strong>${this.emailData.senderName}</strong><br>
+                            Email: <strong>${this.emailData.senderEmail}</strong>
+                            <br><br> ${this.emailData.senderMessage}`
                 };
                 if(!this.errors.length) {
                     transporter.sendMail(msg)

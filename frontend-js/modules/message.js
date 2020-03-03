@@ -65,7 +65,10 @@ export default class Message {
 
     nameHandler() {
         this.nameField.errors = false
-        this.nameFieldCheck();
+        // this.nameFieldCheck();
+        clearTimeout(this.nameField.timer);
+        this.nameField.timer = setTimeout(() => this.nameFieldCheck(), 500)
+
 
     }
 
@@ -101,7 +104,9 @@ export default class Message {
 
     subjectHandler() {
         this.subjectField.errors = false;
-        this.subjectFieldCheck();
+        // this.subjectFieldCheck();
+        clearTimeout(this.nameField.timer);
+        this.nameField.timer = setTimeout(() => this.subjectFieldCheck(), 500)
     }
 
     subjectFieldCheck() {
@@ -116,12 +121,14 @@ export default class Message {
 
     textHandler() {
         this.textField.errors = false;
-        this.textFieldCheck();
+        // this.textFieldCheck();
+        clearTimeout(this.nameField.timer);
+        this.nameField.timer = setTimeout(() => this.textFieldCheck(), 500)
     }
 
     textFieldCheck() {
         if(this.textField.value.length < 6 || this.textField.value == ""){
-            this.showValidatorError(this.textField, "Message too")
+            this.showValidatorError(this.textField, "Message too short")
         }
 
         if(this.textField.value.length > 6){
@@ -141,7 +148,7 @@ export default class Message {
 
     insertElement() {
         this.allField.forEach(el => {
-            el.insertAdjacentHTML('beforeend', '<div class="alert small liveValidateMessage"></div>')
+            el.insertAdjacentHTML('beforeend', '<div class="small liveValidateMessage"></div>')
         })
     }
 }
