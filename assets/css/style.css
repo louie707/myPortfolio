@@ -287,3 +287,15 @@ header,
 html {
     scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar {
+    width: 0.35rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 187, 0);
+}
