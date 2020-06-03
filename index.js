@@ -22,7 +22,6 @@ app.use(sessionOntions)
 app.use(flash())
 
 app.use((req, res, next) => {
-    console.log("request", req.session)
     res.locals.errors = req.flash("errors")
     res.locals.success = req.flash("success")
 
